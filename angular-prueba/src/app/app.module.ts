@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MicomponenteComponent } from './components/micomponente/micomponente.component';
+import { TestLoaderComponent } from './components/test-loader/test-loader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MicomponenteComponent
+    MicomponenteComponent,
+    TestLoaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,6 @@
+<button (click)="cargarProfesionales()">Cargar profesionales</button>
+    <p *ngIf="loaderVisible">⏳ Cargando...</p>
+    <ul>
+      <li *ngFor="let p of profesionales">{{ p }}</li>
+    </ul>
+    <p *ngIf="errorMsg" style="color: red">{{ errorMsg }}</p>
