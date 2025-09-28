@@ -1,5 +1,21 @@
-Debug/
-obj/
-Release/
-Instalador/
-.vs
+# Compilación
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+**/x64/
+**/x86/
+**/build/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+
+# Archivos de usuario de Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de configuración local
+.vs/
+*.vscode/

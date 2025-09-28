@@ -18,3 +18,13 @@
   </li>
 </ul>
 
+
+<h2>Weather Forecast</h2>
+
+<div *ngFor="let clima of climas; let i = index">
+  <div>Fecha: {{ clima.date }}</div>
+  <div>Temperatura (°C): {{ clima.temperatureC }}</div>
+  <div>Resumen: {{ clima.summary }}</div>
+  <br />
+</div>
+ <p *ngIf="errorMsg" style="color: red">{{ errorMsg }}</p>
