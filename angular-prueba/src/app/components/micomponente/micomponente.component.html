@@ -1,0 +1,20 @@
+<hr/>
+
+<div class="videojuegos">
+  <h2>Listado de video juegos</h2>
+  <ul>
+    <li *ngFor="let j of videoJuegos; trackBy: j">
+      {{ j }}
+    </li>
+    <li *ngIf="videoJuegos.length === 0">
+      No hay ningún video juego
+    </li>
+    <!-- Si está vacío el array mostramos el mensaje de la siguiente manera @empty -->
+  </ul>
+
+  <input [(ngModel)] = "nuevoJuego" type="text" 
+  placeholder="Agrega un nuevo video juego" />
+  <button (click)="addJuego()">Añadir</button>
+
+  <h4>{{nuevoJuego}}</h4>
+</div>
