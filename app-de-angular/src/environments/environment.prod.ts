@@ -1,3 +1,6 @@
+import { a } from "@angular/core/src/render3";
+
 export const environment = {
-  production: true
+  production: true,
+  apiUrl: 'PENDING',
 };
